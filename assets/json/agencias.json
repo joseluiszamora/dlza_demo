@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "Agencia Santa Rosa",
+    "image": "assets/agencies/delizia1.jpeg",
+    "address": "Av. Civica, mercado santa Rosa",
+    "city": "El Alto",
+    "phone": "2858485",
+    "schedule": " Lun - Vie: 08:00 a 20:00, Sab: 09:00 a 20:00 y Dom: 09:00 a 17:00",
+    "latitude": -16.536262,
+    "longitude": -68.165054
+  },
+  {
+    "id": 2,
+    "name": "Faro Murillo",
+    "image": "assets/agencies/delizia2.jpeg",
+    "address": "ZONA TEJADA RECTANGULAR, AV. PANORAMICA, TELEFERICO LINEA MORADA FARO MURILLO",
+    "city": "El Alto",
+    "phone": "2858485",
+    "schedule": " Lun - Vie: 08:00 a 20:00, Sab: 09:00 a 20:00 y Dom: 09:00 a 17:00",
+    "latitude": -16.51223,
+    "longitude": -68.15396
+  },
+  {
+    "id": 3,
+    "name": "Villa Dolores Calle 2",
+    "image": "assets/agencies/delizia3.jpeg",
+    "address": "CALLE CONSTANTINO DE MEDINA Nro. 908, ESQUINA CALLE 2, ZONA VILLA DOLORES DE LA CIUDAD DE EL ALTO",
+    "city": "El Alto",
+    "phone": "2858485",
+    "schedule": " Lun - Vie: 08:00 a 20:00, Sab: 09:00 a 20:00 y Dom: 09:00 a 17:00",
+    "latitude": -16.507477,
+    "longitude": -68.16029
+  },
+  {
+    "id": 4,
+    "name": "Satélite 2",
+    "image": "assets/agencies/delizia4.jpeg",
+    "address": "ZONA CIUDAD SATÉLITE, PLAN 561, CALLE 15 N° 371.",
+    "city": "El Alto",
+    "phone": "2858485",
+    "schedule": " Lun - Vie: 08:00 a 20:00, Sab: 09:00 a 20:00 y Dom: 09:00 a 17:00",
+    "latitude": -16.524239,
+    "longitude": -68.149867
+  },
+  {
+    "id": 5,
+    "name": "Miraflores",
+    "image": "assets/agencies/delizia1.jpeg",
+    "address": "DIAZ ROMERO ESQUINA FLORIDA, Nro. 1350, LOCAL No. 5, ZONA MIRAFLORES DE LA CIUDAD DE LA PAZ.",
+    "city": "La Paz",
+    "phone": "2858485",
+    "schedule": " Lun - Vie: 08:00 a 20:00, Sab: 09:00 a 20:00 y Dom: 09:00 a 17:00",
+    "latitude": -16.50136,
+    "longitude": -68.12193
+  },
+  {
+    "id": 6,
+    "name": "Plaza Avaroa",
+    "image": "assets/agencies/delizia2.jpeg",
+    "address": "CALLE BELISARIO SALINAS ESQUINA 20 DE OCTUBRE Nro. 390.",
+    "city": "La Paz",
+    "phone": "2858485",
+    "schedule": " Lun - Vie: 08:00 a 20:00, Sab: 09:00 a 20:00 y Dom: 09:00 a 17:00",
+    "latitude": -16.509709,
+    "longitude": -68.126746
+  },
+  {
+    "id": 7,
+    "name": "Los Pinos C/25",
+    "image": "assets/agencies/delizia3.jpeg",
+    "address": "C.25 CALACOTO - CALLE ARTURO FORTUN SANJINEZ NRO 150.",
+    "city": "La Paz",
+    "phone": "2858485",
+    "schedule": " Lun - Vie: 08:00 a 20:00, Sab: 09:00 a 20:00 y Dom: 09:00 a 17:00",
+    "latitude": -16.540834,
+    "longitude": -68.072308
+  },
+  {
+    "id": 8,
+    "name": "Achumani Calle 16",
+    "image": "assets/agencies/delizia4.jpeg",
+    "address": "AVENIDA GARCIA LANZA ESQUINA CALLE 16 Nro. 500, ZONA ACHUMANI DE LA CIUDAD DE LA PAZ",
+    "city": "La Paz",
+    "phone": "2858485",
+    "schedule": " Lun - Vie: 08:00 a 20:00, Sab: 09:00 a 20:00 y Dom: 09:00 a 17:00",
+    "latitude": -16.531084,
+    "longitude": -68.072705
+  },
+  {
+    "id": 9,
+    "name": "Obrajes Calle 16",
+    "image": "assets/agencies/delizia1.jpeg",
+    "address": "AV. HECTOR ORMACHEA, ESQUINA CALLE 16 DE OBRAJES, S/NÚMERO FRENTE AL MERCADO OBRAJES DE LA CIUDAD DE LA PAZ.",
+    "city": "La Paz",
+    "phone": "2858485",
+    "schedule": " Lun - Vie: 08:00 a 20:00, Sab: 09:00 a 20:00 y Dom: 09:00 a 17:00",
+    "latitude": -16.529487,
+    "longitude": -68.102969
+  },
+  {
+    "id": 10,
+    "name": "Calacoto Calle 8",
+    "image": "assets/agencies/delizia2.jpeg",
+    "address": "AV. BALLIVIAN ENTRE CALLE 8 y 9, No. 275, ZONA CALACOTO DE LA CIUDAD DE LA PAZ.",
+    "city": "La Paz",
+    "phone": "2858485",
+    "schedule": " Lun - Vie: 08:00 a 20:00, Sab: 09:00 a 20:00 y Dom: 09:00 a 17:00",
+    "latitude": -16.540962,
+    "longitude": -68.090904
+  }
+]

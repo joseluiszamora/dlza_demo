@@ -1,5 +1,7 @@
 import 'dart:convert';
 
+import 'package:delizia/core/data/models/agency.dart';
+import 'package:delizia/views/map/screens/agency_info.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:flutter_map_location_marker/flutter_map_location_marker.dart';
@@ -23,11 +25,43 @@ class _MapPageState extends State<MapPage> {
   LatLng? currentLocation;
   LatLng? destination;
   List<LatLng> route = [];
+  List<Marker> markers = [];
 
   @override
   void initState() {
     super.initState();
     _initializeLocation();
+    _readLocationsFromJson();
+  }
+
+  void _readLocationsFromJson() async {
+    final String data = await DefaultAssetBundle.of(context)
+        .loadString('assets/json/agencias.json');
+    final locations = json.decode(data);
+    for (var item in locations) {
+      Agency agency = Agency.fromJson(item);
+      markers.add(Marker(
+        width: 50.0,
+        height: 50.0,
+        point: LatLng(agency.latitude, agency.longitude),
+        child: InkWell(
+          onTap: () {
+            showModalBottomSheet(
+                context: context,
+                builder: (context) {
+                  return AgencyInfo(agency: agency);
+                });
+          },
+          child: const Icon(
+            Icons.location_pin,
+            color: Colors.purple,
+            size: 40,
+          ),
+        ),
+      ));
+      // print('Title: ${item["title"]}, Lat: ${item["lat"]}, Long: ${item["lon"]}');
+    }
+    // print(locations);
   }
 
   Future<void> _initializeLocation() async {
@@ -152,6 +186,7 @@ class _MapPageState extends State<MapPage> {
                     maxZoom: 18,
                   ),
                   children: [
+                    //* Map Layer
                     TileLayer(
                       urlTemplate:
                           'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
@@ -165,21 +200,24 @@ class _MapPageState extends State<MapPage> {
                           markerSize: Size(35, 35),
                           markerDirection: MarkerDirection.north),
                     ),
-                    if (destination != null)
-                      MarkerLayer(
-                        markers: [
-                          Marker(
-                            width: 50.0,
-                            height: 50.0,
-                            point: destination!,
-                            child: const Icon(
-                              Icons.location_pin,
-                              color: Colors.red,
-                              size: 40,
-                            ),
-                          ),
-                        ],
-                      ),
+                    MarkerLayer(
+                      markers: markers,
+                    ),
+                    // if (destination != null)
+                    //   MarkerLayer(
+                    //     markers: [
+                    //       Marker(
+                    //         width: 50.0,
+                    //         height: 50.0,
+                    //         point: destination!,
+                    //         child: const Icon(
+                    //           Icons.location_pin,
+                    //           color: Colors.red,
+                    //           size: 40,
+                    //         ),
+                    //       ),
+                    //     ],
+                    //   ),
                     if (currentLocation != null &&
                         destination != null &&
                         route.isNotEmpty)
@@ -194,7 +232,8 @@ class _MapPageState extends State<MapPage> {
                       ),
                   ],
                 ),
-          _searchBar(),
+          // _searchBar(),
+          _searchOptions(),
         ],
       ),
       floatingActionButton: FloatingActionButton(
@@ -203,6 +242,20 @@ class _MapPageState extends State<MapPage> {
       ),
     );
   }
+
+  Positioned _searchOptions() => Positioned(
+      bottom: 0,
+      left: 0,
+      child: Padding(
+        padding: const EdgeInsets.all(10),
+        child: Row(
+          children: [
+            ElevatedButton(onPressed: () {}, child: const Text('Agencias')),
+            const SizedBox(width: 10),
+            ElevatedButton(onPressed: () {}, child: const Text('La Paz')),
+          ],
+        ),
+      ));
 
   Positioned _searchBar() {
     return Positioned(
