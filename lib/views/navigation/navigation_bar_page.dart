@@ -16,7 +16,7 @@ class NavigationBarPage extends StatefulWidget {
 class _NavigationBarPageState extends State<NavigationBarPage> {
   final GlobalKey<CurvedNavigationBarState> bottomNavigationKey = GlobalKey();
 
-  int pageSelected = 2;
+  int pageSelected = 0;
 
   @override
   Widget build(BuildContext context) {

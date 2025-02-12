@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "image": "assets/banner/b1.jpg",
+    "url": "https://delizia.bo/category/novedades-delizia/"
+  },
+  {
+    "id": 2,
+    "image": "assets/banner/b2.jpg",
+    "url": "https://delizia.bo/delizia-lider-del-mercado-de-helados-en-bolivia/"
+  },
+  {
+    "id": 3,
+    "image": "assets/banner/b3.jpg",
+    "url": "https://delizia.bo/la-linea-tradicion-fue-galardonada-como-los-helados-mas-innovadores-del-2022/"
+  },
+  {
+    "id": 4,
+    "image": "assets/banner/b4.jpg",
+    "url": "https://delizia.bo/category/novedades-delizia/"
+  },
+  {
+    "id": 5,
+    "image": "assets/banner/b5.jpg",
+    "url": "https://delizia.bo/delizia-lider-del-mercado-de-helados-en-bolivia/"
+  },
+  {
+    "id": 6,
+    "image": "assets/banner/b6.jpg",
+    "url": "https://delizia.bo/la-linea-tradicion-fue-galardonada-como-los-helados-mas-innovadores-del-2022/"
+  }
+]

@@ -17,15 +17,15 @@ class LayoutWrapperLogo extends StatelessWidget {
         child: Column(
           children: <Widget>[
             //* TITULO DE LA TARJETA
-            Text(title,
-                style: Theme.of(context).textTheme.titleMedium,
-                textAlign: TextAlign.center),
+            // Text(title,
+            //     style: Theme.of(context).textTheme.titleMedium,
+            //     textAlign: TextAlign.center),
 
             //* SEPARADOR
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 50, vertical: 0),
-              child: Divider(color: Colors.grey),
-            ),
+            // const Padding(
+            //   padding: EdgeInsets.symmetric(horizontal: 50, vertical: 0),
+            //   child: Divider(color: Colors.grey),
+            // ),
 
             Expanded(
               child: child,
