@@ -1,7 +1,8 @@
-import 'package:delizia/core/constants/app_colors.dart';
+import 'package:delizia/core/routes/app_routes.dart';
 import 'package:delizia/views/products/views/category_tile.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:go_router/go_router.dart';
 
 class CategoryProducts extends StatelessWidget {
   const CategoryProducts({super.key});
@@ -11,7 +12,7 @@ class CategoryProducts extends StatelessWidget {
     return Column(
       children: [
         Text(
-          'Categorias de Productos',
+          'Nuestros Productos',
           style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                 color: Colors.black,
                 fontWeight: FontWeight.bold,
@@ -32,7 +33,7 @@ class CategoryProducts extends StatelessWidget {
                 label: 'Bebidas',
                 // backgroundColor: AppColors.primary,
                 onTap: () {
-                  // Navigator.pushNamed(context, AppRoutes.categoryDetails);
+                  context.go(AppRoutes.productsCategoryList, extra: "drinks");
                 },
               ),
               CategoryTile(
@@ -43,7 +44,8 @@ class CategoryProducts extends StatelessWidget {
                 ),
                 label: 'Congelados',
                 onTap: () {
-                  // Navigator.pushNamed(context, AppRoutes.categoryDetails);
+                  context.go(AppRoutes.productsCategoryList,
+                      extra: "icecreams");
                 },
               ),
               CategoryTile(
@@ -54,7 +56,7 @@ class CategoryProducts extends StatelessWidget {
                 ),
                 label: 'Lacteos',
                 onTap: () {
-                  // Navigator.pushNamed(context, AppRoutes.categoryDetails);
+                  context.go(AppRoutes.productsCategoryList, extra: "milks");
                 },
               ),
             ],

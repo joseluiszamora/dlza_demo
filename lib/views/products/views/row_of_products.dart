@@ -5,6 +5,7 @@ import 'package:delizia/core/data/models/product.dart';
 import 'package:delizia/core/routes/app_routes.dart';
 import 'package:delizia/views/products/widget/bundle_tile_square.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class RowOfProducts extends StatefulWidget {
   const RowOfProducts({super.key, required this.title, required this.category});
@@ -17,6 +18,7 @@ class RowOfProducts extends StatefulWidget {
 
 class _RowOfProductsState extends State<RowOfProducts> {
   List<Product> products = [];
+  String category = "";
 
   @override
   void initState() {
@@ -30,24 +32,28 @@ class _RowOfProductsState extends State<RowOfProducts> {
         List<Product> tmp = await Products().featuredProducts(context);
         setState(() {
           products = tmp;
+          category = "featured";
         });
         break;
       case "drinks":
         List<Product> tmp = await Products().drinkProducts(context);
         setState(() {
           products = tmp;
+          category = "drinks";
         });
         break;
       case "milks":
         List<Product> tmp = await Products().milkProducts(context);
         setState(() {
           products = tmp;
+          category = "milks";
         });
         break;
       case "icecreams":
         List<Product> tmp = await Products().icecreamProducts(context);
         setState(() {
           products = tmp;
+          category = "icecreams";
         });
         break;
     }
@@ -61,7 +67,7 @@ class _RowOfProductsState extends State<RowOfProducts> {
           title: widget.title,
           isHeadline: true,
           onTap: () {
-            // Navigator.of(context).pushNamed(AppRoutes.productDetails);
+            context.go(AppRoutes.productsCategoryList, extra: category);
           },
         ),
         SingleChildScrollView(

@@ -5,4 +5,5 @@ class AppRoutes {
 
   /* <---- PRODUCTS -----> */
   static const productDetails = '/productDetails';
+  static const productsCategoryList = '/productsCategoryList';
 }
