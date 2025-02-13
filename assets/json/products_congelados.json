@@ -1,0 +1,149 @@
+[
+  {
+    "id": 301,
+    "category": "congelados",
+    "name": "Alfredo Canela",
+    "desc": "Helado de agua sabor canela para disfrutar los momentos más calurosos con mucho sabor",
+    "info": "Agua, azúcar, jarabe de glucosa, estabilizantes (SIN-407, SIN-412), enturbiante, colorante (SIN-122), conservante (SIN-211), saborizante idéntico al natural canela",
+    "flavors": ["Canela"],
+    "cover": "assets/products/p14.webp",
+    "images": ["assets/products/p14.webp"],
+    "price": 10,
+    "price_offer": 9
+  },
+  {
+    "id": 302,
+    "category": "congelados",
+    "name": "Brownie",
+    "desc": "Helado de crema con galleta tipo brownie con una textura cremosa y deliciosa para cada día.",
+    "info": "Leche, azúcar, aceite vegetal hidrogenado, leche descremada, estabilizantes (SIN-407, SIN-412, SIN-466 y SIN-471) y saborizante idéntico al natural (vainilla). Galletas de chocolate.",
+    "flavors": ["Canela"],
+    "cover": "assets/products/p15.png",
+    "images": ["assets/products/p15.png"],
+    "price": 10,
+    "price_offer": 9
+  },
+  {
+    "id": 303,
+    "category": "congelados",
+    "name": "Cassatta",
+    "desc": "Helado de crema de tres sabores combinados. Ideal para compartirlo con la compañía de tus seres queridos y disfrutar sus sabores juntos.",
+    "info": "",
+    "flavors": ["Coco", "Chocolate"],
+    "cover": "assets/products/p16.png",
+    "images": ["assets/products/p16.png"],
+    "price": 10,
+    "price_offer": 9
+  },
+  {
+    "id": 304,
+    "category": "congelados",
+    "name": "Delizaurio Cherry Pina",
+    "desc": "Helado de agua de cherry y piña que te llena de sabor. Ideal para los más pequeños de casa.",
+    "info": "Agua, azúcar, acido cítrico, estabilizantes (SIN-102, SIN-122 y SIN-133) y saborizante idéntico al natural (piña y Cherry).",
+    "flavors": [],
+    "cover": "assets/products/p17.png",
+    "images": ["assets/products/p17.png"],
+    "price": 10,
+    "price_offer": 9
+  },
+  {
+    "id": 305,
+    "category": "congelados",
+    "name": "Helado Cono Ricoco 100ml",
+    "desc": "Helado de crema en cono de galleta con cobertura de chocolate y coco. Un contraste de sabores que no puedes dejar de probar.",
+    "info": "",
+    "flavors": [],
+    "cover": "assets/products/p18.png",
+    "images": ["assets/products/p18.png"],
+    "price": 10,
+    "price_offer": 9
+  },
+  {
+    "id": 306,
+    "category": "congelados",
+    "name": "Helado Vaquita",
+    "desc": "Helado de leche en sus tres intensos sabores que te llenan de mucho sabor.",
+    "info": "",
+    "flavors": [],
+    "cover": "assets/products/p19.png",
+    "images": ["assets/products/p19.png", "assets/products/p191.png"],
+    "price": 10,
+    "price_offer": 9
+  },
+  {
+    "id": 307,
+    "category": "congelados",
+    "name": "Litro Familiar",
+    "desc": "Postre helado de crema con una variedad de sabores. Lo mejor para disfrutar en reuniones con familiares o amigos.",
+    "info": "",
+    "flavors": ["Frutilla", "Granizado", "Chocolate", "Vainilla"],
+    "cover": "assets/products/p20.png",
+    "images": [
+      "assets/products/p20.png",
+      "assets/products/p201.png",
+      "assets/products/p202.png"
+    ],
+    "price": 10,
+    "price_offer": 9
+  },
+  {
+    "id": 308,
+    "category": "congelados",
+    "name": "Postre Helado Tentación 1L",
+    "desc": "Postre helado de crema con veteado de salsa con chocolate amargo.",
+    "info": "",
+    "flavors": ["Frambuesa", "Mora"],
+    "cover": "assets/products/p203.png",
+    "images": ["assets/products/p203.png"],
+    "price": 10,
+    "price_offer": 9
+  },
+  {
+    "id": 309,
+    "category": "congelados",
+    "name": "Rocky",
+    "desc": "Helado de crema con cobertura de chocolate y crispies. Un clásico ideal para disfrutar a cualquier momento del día.",
+    "info": "Leche, azúcar, aceite vegetal, suero de leche, maltodextrina, estabilizantes (SIN-471, SIN-466, SIN-407 y SIN-412), colorantes (SIN-110 y amarillo N°5) y saborizante artificial (vainilla). Cobertura de chocolate y crispies.",
+    "flavors": [],
+    "cover": "assets/products/p21.png",
+    "images": ["assets/products/p21.png"],
+    "price": 10,
+    "price_offer": 9
+  },
+  {
+    "id": 310,
+    "category": "congelados",
+    "name": "Torta Helada Tentación",
+    "desc": "Postre helado sabor a crema americana, veteada con salsa de frambuesa y chocolate granizado con cobertura de chocolate y toques de decoración con chantilly. Una torta realmente tentadora en sabor, textura y color.",
+    "info": "",
+    "flavors": [],
+    "cover": "assets/products/p23.png",
+    "images": ["assets/products/p23.png"],
+    "price": 10,
+    "price_offer": 9
+  },
+  {
+    "id": 311,
+    "category": "congelados",
+    "name": "Vaso Bambino",
+    "desc": "Postre helados con salsa de diferentes sabores, ideal para disfrutarlo en un día caluroso.",
+    "info": "",
+    "flavors": [
+      "Vainilla",
+      "Dulce de leche",
+      "Pasas al ron",
+      "Chocolate",
+      "Frutilla"
+    ],
+    "cover": "assets/products/p24.png",
+    "images": [
+      "assets/products/p24.png",
+      "assets/products/p241.png",
+      "assets/products/p242.png",
+      "assets/products/p243.png"
+    ],
+    "price": 10,
+    "price_offer": 9
+  }
+]

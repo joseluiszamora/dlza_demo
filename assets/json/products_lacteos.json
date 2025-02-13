@@ -1,0 +1,90 @@
+[
+  {
+    "id": 201,
+    "category": "lacteos",
+    "name": "Café Con Leche Delizia Uht 250ml",
+    "desc": "Mezcla de café con leche, de gran sabor y envase ideal para disfrutarlo en todo momento.",
+    "info": "Leche fluida parcialmente descremada, azúcar, café instantáneo liofilizado, regulador de la acidez (SIN-331 iii), estabilizantes (SIN-471 y SIN-407) y saborizante articula a café.",
+    "flavors": ["Café con leche"],
+    "cover": "assets/products/p7.webp",
+    "images": ["assets/products/p7.webp"],
+    "price": 10,
+    "price_offer": 9
+  },
+  {
+    "id": 202,
+    "category": "lacteos",
+    "name": "Chiquidrink Frutilla 120 ml",
+    "desc": "Yogurt bebible sabor frutilla, de consistencia ligera y de gran valor nutritivo para consumirlo en todo momento.",
+    "info": "Leche descremada en polvo, leche fluida, azúcar, suero de leche, grasa vegetal, cultivos lácteos (Lactobacillus Bulgaricus y Streptococcus Thermophilus), estabilizantes (SIN-440, SIN-1421 y gelatina), colorante (SIN-120) y saborizante idéntico al natural frutilla.",
+    "flavors": ["Frutilla"],
+    "cover": "assets/products/p8.png",
+    "images": ["assets/products/p8.png"],
+    "price": 10,
+    "price_offer": 9
+  },
+  {
+    "id": 203,
+    "category": "lacteos",
+    "name": "Frutdrink Sachet 120 ml",
+    "desc": "Yogurt bebible de distintos sabores a fruta natural. En una presentación de fácil consumo estés donde estés.",
+    "info": "Frutilla: Leche descremada en polvo, leche fluida, azúcar, suero de leche, grasa vegetal, cultivos lácteos (Lactobacillus Bulgaricus y Streptococcus Thermophilus), estabilizantes (SIN-440, SIN-1421 y gelatina), colorante (SIN-120) y saborizante idéntico al natural frutilla. Durazno: colorantes (SIN-120 Y SIN-160b) y saborizante idéntico al natural durazno.",
+    "flavors": ["Frutilla", "Mora"],
+    "cover": "assets/products/p9.webp",
+    "images": ["assets/products/p9.webp"],
+    "price": 10,
+    "price_offer": 9
+  },
+  {
+    "id": 204,
+    "category": "lacteos",
+    "name": "Leche Sachet 120 ml",
+    "desc": "Leche saborizada para disfrutarlo en cualquier momento del día.",
+    "info": "Leche parcialmente descremada, azúcar, maltodextrina, regulador de la acidez (SIN-331), estabilizantes (SIN-471, SIN-401 y SIN-407).",
+    "flavors": ["Avena", "Chocolate", "Frutilla", "Platano", "Mora"],
+    "cover": "assets/products/p10.webp",
+    "images": [
+      "assets/products/p10.webp",
+      "assets/products/p101.webp",
+      "assets/products/p102.webp"
+    ],
+    "price": 10,
+    "price_offer": 9
+  },
+  {
+    "id": 205,
+    "category": "lacteos",
+    "name": "Protein Shake Frutilla Vaso 200g",
+    "desc": "Batido con proteínas sabor frutilla. Suplemento ideal al momento de ejercitarte.",
+    "info": "",
+    "flavors": ["Frutilla"],
+    "cover": "assets/products/p11.webp",
+    "images": ["assets/products/p11.webp"],
+    "price": 10,
+    "price_offer": 9
+  },
+  {
+    "id": 206,
+    "category": "lacteos",
+    "name": "Yogurt Familiar 2Kg",
+    "desc": "Yogurt bebible con adición de mermelada de fruta para darle mayor sabor y consistencia a todos tus snacks, meriendas y recetas.",
+    "info": "",
+    "flavors": ["Durazno", "Frutilla", "Coco", "Mora"],
+    "cover": "assets/products/p12.png",
+    "images": ["assets/products/p12.png"],
+    "price": 10,
+    "price_offer": 9
+  },
+  {
+    "id": 207,
+    "category": "lacteos",
+    "name": "Yogurt Proactive Defense Miel Jengibre 200g",
+    "desc": "Yogurt probiótico con miel y jengibre, que contribuye al refuerzo del sistema inmunológico con el incremento de defensas.",
+    "info": "",
+    "flavors": ["Miel Jengibre"],
+    "cover": "assets/products/p13.webp",
+    "images": ["assets/products/p13.webp"],
+    "price": 10,
+    "price_offer": 9
+  }
+]
