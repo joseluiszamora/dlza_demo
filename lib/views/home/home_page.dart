@@ -12,21 +12,20 @@ class HomePage extends StatelessWidget {
     return const CustomScrollView(
       slivers: [
         AppBarMain(),
-        SliverToBoxAdapter(child: SizedBox(height: 20)),
-        SliverToBoxAdapter(
-          child: HomeBanner(),
-        ),
-        SliverToBoxAdapter(child: SizedBox(height: 20)),
+        SliverToBoxAdapter(child: SizedBox(height: 10)),
+        SliverToBoxAdapter(child: HomeBanner()),
+        SliverToBoxAdapter(child: SizedBox(height: 10)),
         SliverToBoxAdapter(
             child: RowOfProducts(
                 title: "Productos Populares", category: "featured")),
-        SliverToBoxAdapter(child: SizedBox(height: 20)),
+        SliverToBoxAdapter(child: SizedBox(height: 10)),
         SliverPadding(
           padding: EdgeInsets.symmetric(horizontal: 20),
           sliver: SliverToBoxAdapter(
             child: SliderAdds(),
           ),
         ),
+        SliverToBoxAdapter(child: SizedBox(height: 50)),
         // SliverList(
         //   delegate: SliverChildBuilderDelegate(
         //     (BuildContext context, int index) {

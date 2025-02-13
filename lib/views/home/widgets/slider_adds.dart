@@ -35,8 +35,10 @@ class _SliderAddsState extends State<SliderAdds> {
           padding: const EdgeInsets.only(bottom: AppDefaults.margin),
           child: Row(children: [
             Text("Anuncios",
-                style: Theme.of(context).textTheme.titleMedium,
-                textAlign: TextAlign.center)
+                style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20))
           ]),
         ),
         CarouselSlider(
@@ -49,12 +51,19 @@ class _SliderAddsState extends State<SliderAdds> {
           items: imagesAdds
               .map((item) => ClipRRect(
                     borderRadius: const BorderRadius.all(Radius.circular(10.0)),
-                    child: Center(
+                    child: AspectRatio(
+                      aspectRatio: 16.0 / 9.0,
                       child: Image(
                         image: AssetImage(item.image),
-                        fit: BoxFit.contain,
+                        fit: BoxFit.fitWidth,
                       ),
                     ),
+                    // child: Center(
+                    //   child: Image(
+                    //     image: AssetImage(item.image),
+                    //     fit: BoxFit.contain,
+                    //   ),
+                    // ),
                   ))
               .toList(),
         ),
