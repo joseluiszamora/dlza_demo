@@ -1,5 +1,6 @@
 import 'package:delizia/core/layouts/layout_wrapper_logo.dart';
 import 'package:delizia/views/home/home_page.dart';
+import 'package:delizia/views/info/info_page.dart';
 import 'package:delizia/views/map/map_page.dart';
 import 'package:delizia/views/products/products_page.dart';
 import 'package:delizia/views/profile/profile_page.dart';
@@ -16,35 +17,42 @@ class NavigationBarPage extends StatefulWidget {
 class _NavigationBarPageState extends State<NavigationBarPage> {
   final GlobalKey<CurvedNavigationBarState> bottomNavigationKey = GlobalKey();
 
-  int pageSelected = 0;
+  int pageSelected = 2;
 
   @override
   Widget build(BuildContext context) {
     final colorIcons = Theme.of(context).navigationBarTheme.indicatorColor;
     //* Pages List
     List<Widget> pages = [
-      const HomePage(),
       const ProductsPage(),
+      const InfoPage(),
+      const HomePage(),
       const MapPage(),
       const ProfilePage(),
     ];
 
     List<String> pagesNames = [
-      'Inicio',
-      'Mi perfil',
-      'Encuentranos',
       'Nuestros productos',
+      'Información',
+      'Inicio',
+      'Encuentranos',
+      'Mi perfil',
     ];
 
     //* Menu Items List
     List<Widget> items = [
       Icon(
-        Icons.home,
+        Icons.production_quantity_limits,
         color: colorIcons,
         size: 35,
       ),
       Icon(
-        Icons.production_quantity_limits,
+        Icons.info,
+        color: colorIcons,
+        size: 35,
+      ),
+      Icon(
+        Icons.home,
         color: colorIcons,
         size: 35,
       ),
