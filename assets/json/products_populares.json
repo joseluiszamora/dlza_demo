@@ -1,0 +1,118 @@
+[
+  {
+    "id": 104,
+    "category": "bebidas",
+    "name": "Ice Fruit Sachet 150ml",
+    "desc": "Bebida elaborada a base de la pulpa de frutas, mango y naranja.",
+    "info": "",
+    "flavors": ["Citrus", "Mango", "Caribbean", "Uva"],
+    "cover": "assets/products/p5.png",
+    "images": [
+      "assets/products/p5.png",
+      "assets/products/p51.png",
+      "assets/products/p52.png"
+    ],
+    "price": 10,
+    "price_offer": 9
+  },
+  {
+    "id": 101,
+    "category": "bebidas",
+    "name": "Agua Glaciar 6L",
+    "desc": "Agua purificada de mesa, te acompaña en todo momento.",
+    "info": "",
+    "flavors": [],
+    "cover": "assets/products/p1.webp",
+    "images": ["assets/products/p1.webp"],
+    "price": 10,
+    "price_offer": 9
+  },
+  {
+    "id": 309,
+    "category": "congelados",
+    "name": "Rocky",
+    "desc": "Helado de crema con cobertura de chocolate y crispies. Un clásico ideal para disfrutar a cualquier momento del día.",
+    "info": "Leche, azúcar, aceite vegetal, suero de leche, maltodextrina, estabilizantes (SIN-471, SIN-466, SIN-407 y SIN-412), colorantes (SIN-110 y amarillo N°5) y saborizante artificial (vainilla). Cobertura de chocolate y crispies.",
+    "flavors": [],
+    "cover": "assets/products/p21.png",
+    "images": ["assets/products/p21.png"],
+    "price": 10,
+    "price_offer": 9
+  },
+  {
+    "id": 306,
+    "category": "congelados",
+    "name": "Helado Vaquita",
+    "desc": "Helado de leche en sus tres intensos sabores que te llenan de mucho sabor.",
+    "info": "",
+    "flavors": [],
+    "cover": "assets/products/p19.png",
+    "images": ["assets/products/p19.png", "assets/products/p191.png"],
+    "price": 10,
+    "price_offer": 9
+  },
+  {
+    "id": 305,
+    "category": "congelados",
+    "name": "Helado Cono Ricoco 100ml",
+    "desc": "Helado de crema en cono de galleta con cobertura de chocolate y coco. Un contraste de sabores que no puedes dejar de probar.",
+    "info": "",
+    "flavors": [],
+    "cover": "assets/products/p18.png",
+    "images": ["assets/products/p18.png"],
+    "price": 10,
+    "price_offer": 9
+  },
+  {
+    "id": 304,
+    "category": "congelados",
+    "name": "Delizaurio Cherry Pina",
+    "desc": "Helado de agua de cherry y piña que te llena de sabor. Ideal para los más pequeños de casa.",
+    "info": "Agua, azúcar, acido cítrico, estabilizantes (SIN-102, SIN-122 y SIN-133) y saborizante idéntico al natural (piña y Cherry).",
+    "flavors": [],
+    "cover": "assets/products/p17.png",
+    "images": ["assets/products/p17.png"],
+    "price": 10,
+    "price_offer": 9
+  },
+  {
+    "id": 202,
+    "category": "lacteos",
+    "name": "Chiquidrink Frutilla 120 ml",
+    "desc": "Yogurt bebible sabor frutilla, de consistencia ligera y de gran valor nutritivo para consumirlo en todo momento.",
+    "info": "Leche descremada en polvo, leche fluida, azúcar, suero de leche, grasa vegetal, cultivos lácteos (Lactobacillus Bulgaricus y Streptococcus Thermophilus), estabilizantes (SIN-440, SIN-1421 y gelatina), colorante (SIN-120) y saborizante idéntico al natural frutilla.",
+    "flavors": ["Frutilla"],
+    "cover": "assets/products/p8.png",
+    "images": ["assets/products/p8.png"],
+    "price": 10,
+    "price_offer": 9
+  },
+  {
+    "id": 204,
+    "category": "lacteos",
+    "name": "Leche Sachet 120 ml",
+    "desc": "Leche saborizada para disfrutarlo en cualquier momento del día.",
+    "info": "Leche parcialmente descremada, azúcar, maltodextrina, regulador de la acidez (SIN-331), estabilizantes (SIN-471, SIN-401 y SIN-407).",
+    "flavors": ["Avena", "Chocolate", "Frutilla", "Platano", "Mora"],
+    "cover": "assets/products/p10.webp",
+    "images": [
+      "assets/products/p10.webp",
+      "assets/products/p101.webp",
+      "assets/products/p102.webp"
+    ],
+    "price": 10,
+    "price_offer": 9
+  },
+  {
+    "id": 206,
+    "category": "lacteos",
+    "name": "Yogurt Familiar 2Kg",
+    "desc": "Yogurt bebible con adición de mermelada de fruta para darle mayor sabor y consistencia a todos tus snacks, meriendas y recetas.",
+    "info": "",
+    "flavors": ["Durazno", "Frutilla", "Coco", "Mora"],
+    "cover": "assets/products/p12.png",
+    "images": ["assets/products/p12.png"],
+    "price": 10,
+    "price_offer": 9
+  }
+]

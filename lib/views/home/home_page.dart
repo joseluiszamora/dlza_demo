@@ -1,7 +1,7 @@
 import 'package:delizia/core/components/appbar/app_bar_main.dart';
 import 'package:delizia/views/home/widgets/home_banner.dart';
 import 'package:delizia/views/home/widgets/slider_adds.dart';
-import 'package:delizia/views/products/views/featured_products.dart';
+import 'package:delizia/views/products/views/row_of_products.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -17,7 +17,9 @@ class HomePage extends StatelessWidget {
           child: HomeBanner(),
         ),
         SliverToBoxAdapter(child: SizedBox(height: 20)),
-        SliverToBoxAdapter(child: FeaturedProducts()),
+        SliverToBoxAdapter(
+            child: RowOfProducts(
+                title: "Productos Populares", category: "featured")),
         SliverToBoxAdapter(child: SizedBox(height: 20)),
         SliverPadding(
           padding: EdgeInsets.symmetric(horizontal: 20),

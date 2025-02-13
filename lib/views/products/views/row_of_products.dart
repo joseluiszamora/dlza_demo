@@ -6,14 +6,16 @@ import 'package:delizia/core/routes/app_routes.dart';
 import 'package:delizia/views/products/widget/bundle_tile_square.dart';
 import 'package:flutter/material.dart';
 
-class FeaturedProducts extends StatefulWidget {
-  const FeaturedProducts({super.key});
+class RowOfProducts extends StatefulWidget {
+  const RowOfProducts({super.key, required this.title, required this.category});
+  final String title;
+  final String category;
 
   @override
-  State<FeaturedProducts> createState() => _FeaturedProductsState();
+  State<RowOfProducts> createState() => _RowOfProductsState();
 }
 
-class _FeaturedProductsState extends State<FeaturedProducts> {
+class _RowOfProductsState extends State<RowOfProducts> {
   List<Product> products = [];
 
   @override
@@ -23,11 +25,32 @@ class _FeaturedProductsState extends State<FeaturedProducts> {
   }
 
   void _getProducts() async {
-    List<Product> tmp = await Products().featuredProducts(context);
-
-    setState(() {
-      products = tmp;
-    });
+    switch (widget.category) {
+      case "featured":
+        List<Product> tmp = await Products().featuredProducts(context);
+        setState(() {
+          products = tmp;
+        });
+        break;
+      case "drinks":
+        List<Product> tmp = await Products().drinkProducts(context);
+        setState(() {
+          products = tmp;
+        });
+        break;
+      case "milks":
+        List<Product> tmp = await Products().milkProducts(context);
+        setState(() {
+          products = tmp;
+        });
+        break;
+      case "icecreams":
+        List<Product> tmp = await Products().icecreamProducts(context);
+        setState(() {
+          products = tmp;
+        });
+        break;
+    }
   }
 
   @override
@@ -35,7 +58,7 @@ class _FeaturedProductsState extends State<FeaturedProducts> {
     return Column(
       children: [
         TitleAndActionButton(
-          title: 'Productos Populares',
+          title: widget.title,
           isHeadline: true,
           onTap: () {
             // Navigator.of(context).pushNamed(AppRoutes.productDetails);
