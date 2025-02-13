@@ -1,4 +1,5 @@
-import 'package:delizia/views/navigation/navigation_bar_page.dart';
+import 'package:delizia/core/routes/app_router.dart';
+import 'package:delizia/core/themes/app_themes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,14 +11,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: const NavigationBarPage(),
+      theme: AppTheme.defaultTheme,
+      routerConfig: appRouter(),
     );
   }
 }

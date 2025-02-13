@@ -1,7 +1,9 @@
 import 'package:delizia/core/constants/app_colors.dart';
 import 'package:delizia/core/constants/app_defaults.dart';
 import 'package:delizia/core/data/models/product.dart';
+import 'package:delizia/core/routes/app_routes.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class BundleTileSquare extends StatelessWidget {
   const BundleTileSquare({
@@ -18,7 +20,7 @@ class BundleTileSquare extends StatelessWidget {
       borderRadius: AppDefaults.borderRadius,
       child: InkWell(
         onTap: () {
-          // Navigator.pushNamed(context, AppRoutes.bundleProduct);
+          context.go(AppRoutes.productDetails, extra: data);
         },
         borderRadius: AppDefaults.borderRadius,
         child: Container(
