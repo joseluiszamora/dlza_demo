@@ -52,7 +52,7 @@ class BundleTileSquare extends StatelessWidget {
                     data.name,
                     style: Theme.of(context)
                         .textTheme
-                        .titleLarge
+                        .bodyLarge
                         ?.copyWith(color: Colors.black),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
@@ -64,27 +64,27 @@ class BundleTileSquare extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 8),
-              Row(
-                children: [
-                  Text(
-                    '\$${data.priceOffer}',
-                    style: Theme.of(context)
-                        .textTheme
-                        .titleLarge
-                        ?.copyWith(color: Colors.black),
-                  ),
-                  const SizedBox(width: 4),
-                  Text(
-                    '\$${data.price}',
-                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                          decoration: TextDecoration.lineThrough,
-                        ),
-                  ),
-                  const Spacer(),
-                ],
-              ),
-              const SizedBox(height: 16),
+              const SizedBox(height: 10),
+              // Row(
+              //   children: [
+              //     Text(
+              //       '\$${data.priceOffer}',
+              //       style: Theme.of(context)
+              //           .textTheme
+              //           .titleLarge
+              //           ?.copyWith(color: Colors.black),
+              //     ),
+              //     const SizedBox(width: 4),
+              //     Text(
+              //       '\$${data.price}',
+              //       style: Theme.of(context).textTheme.bodyMedium?.copyWith(
+              //             decoration: TextDecoration.lineThrough,
+              //           ),
+              //     ),
+              //     const Spacer(),
+              //   ],
+              // ),
+              // const SizedBox(height: 16),
             ],
           ),
         ),

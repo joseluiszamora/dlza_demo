@@ -36,6 +36,7 @@ class _FeaturedProductsState extends State<FeaturedProducts> {
       children: [
         TitleAndActionButton(
           title: 'Productos Populares',
+          isHeadline: true,
           onTap: () {
             // Navigator.of(context).pushNamed(AppRoutes.productDetails);
           },
